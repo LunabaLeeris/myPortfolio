@@ -187,10 +187,10 @@
                         <a href="" download class="btn btn2">Download Resume</a>
                     </div>
                     <div class="contact-right reveal">
-                        <form>
-                            <input type="text" name="name" placeholder="You Name" required>
-                            <input type="text" name="e-mail" placeholder="Your E-Mail" required>
-                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
+                            <input type="text" name="name" placeholder="You Name" name="name" required>
+                            <input type="text" name="e-mail" placeholder="Your E-Mail" name="e-mail" required>
+                            <textarea name="message" rows="6" placeholder="Your Message" name="message"></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
                     </div>
