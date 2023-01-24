@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Christian Lee Lunaba.porfo</title>
+    <script src="https://kit.fontawesome.com/a98e23a331.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav id="navigator">
+                <img src="images/logo.png" class="logo">
+                <ul id="menu_bar">    
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="close_menu()"></i>
+                </ul>
+                <i id="menu_icon" class="fa-solid fa-bars" onclick="open_menu()"></i>
+            </nav>
+            <div class="header-text">
+                <div>
+                    <p class="specialties">Game-Dev</p><p style="display:inline"> /</p>
+                    <p class="specialties">App-Design</p><p style="display:inline"> /</p>
+                    <p class="specialties">ML</p>
+                
+                </div>
+                <div>
+                    <h1 class="intro">H</h1>
+                    <h1 class="intro">o</h1>
+                    <h1 class="intro">w</h1>
+                    <h1 class="intro">d</h1>
+                    <h1 class="intro">y</h1>
+                    <h1 class="intro">,</h1>
+                    <h1 class="intro">I</h1>
+                    <h1 class="intro">'</h1>
+                    <h1 class="intro">m</h1>
+                </div>
+                <h1 id="name">Christian Lee</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------About page--------------------------->
+    <div id="about">
+        <div class="container reveal">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/my_profile.png">
+                </div>  
+                <div class="about-col-2">
+                    <h1 id="about-me">About Me</h1><br>
+                    <p>Howdy! I am a first-year Computer Science student specializing in Machine Learning.
+                        I have explored multiple fields, especially game/app development that is supported both in
+                        pc and mobile. I have extensive knowledge in Python and its libraries such as Kivy and Pygame.
+                              I have also studied Java/Java-swing. Most importantly, I can learn and adapt quickly. I am looking
+                        forward to do some fun work with you!.   
+                    </p>
+                    <div class="tab-titles">
+                        <div class="col1">
+                            <p class="tab-links active-link" onclick="opentab('skls')">Skill</p>
+                            <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                        </div>
+                        <div class="col2">
+                            <p class="tab-links" onclick="opentab('educ')">Education</p>
+                            <p class="tab-links" onclick="opentab('ach')">Achievement</p>
+                        </div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skls">
+                        <ul>
+                            <li><span>Game/App dev</span><br>Designing game and app both in mobile and pc</li>
+                            <li><span>Python</span><br>Can use python and its libraries such as Kivy, Pygame, Numpy, Numba and OpenPyXL</li>
+                            <li><span>Java</span><br>Can use Java and its libraries such as Java-swing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>Freelancing</span><br>3 months free lancing in websites such as fiver and  upwork</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educ">
+                        <ul>
+                            <li><span>BS-CSML</span><br>First year Computer Science with specialization in machine learning</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="ach">
+                        <ul>
+                            <li><span>Mathematics</span><br>First Place Division Level DEPED-MTAP(2019)<br>Regional Qualifier in DEPED-MTAP (2019)<br>Qualifier in PH-Olympiad</li>
+                        </ul>
+                    </div>
+                    
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------ Services Page --------------------------->
+    <div id="services">
+        <div class="container reveal">
+            <h1 id="my-services">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>PC Development</h2><br>
+                    <p>Create PC Application or Game Using
+                        Languages such as Python(Kivy, Pygame, Tkinter) and Java(Java-swing).
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen"></i>   
+                    <h2>Mobile Development</h2><br>
+                    <p>Create Mobile Application or Game Using
+                        Languages such as Python(Kivy, Pygame, Tkinter) and Java(Java-swing).</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <h2>Machine Learning</h2><br>
+                    <p>Currently Learning...</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!------------------------ Work Page --------------------------->
+    <div id="portfolio">
+        <div class="container reveal">
+            <h1 id="my-work">My Work</h1>
+
+                <div class="work-list">
+                    <div class="work" onmouseover="play_video('2D_f')" onmouseout="pause_video('2D_f')">
+                        <video src="images/2D-FLat.mp4" loop type="video/mp4" id="2D_f">
+                        </video>
+                        <div class="layer">
+                            <h3>2D puzzles</h3>
+                            <p>I have created a typing game titled "En Passant" where you have to escape the attacking pieces
+                                for as long as you can and a minesweeper mock-up with custom sprites.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" onmouseover="play_video('2D_i')" onmouseout="pause_video('2D_i')">
+                        <video src="images/2D-Isometric.mp4" type="video/mp4" loop  id="2D_i">
+                        </video>
+                        <div class="layer">
+                            <h3>2D-Isometric</h3>
+                            <p>I have created a game titled "Geomon". In this game, you are tasked to gather all the 
+                                ancient stones hidden within the island to stop the rain before the island sunk. 
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="work" onmouseover="play_video('mobile')" onmouseout="pause_video('mobile')">
+                        <video src="images/Mobile.mp4" type="video/mp4" loop  id="mobile">
+                        </video>
+                        <div class="layer">
+                            <h3>Mobile</h3>
+                            <p>I have created a mobile game tilted "twisted-snake". It is just a snake Game
+                                but better. 
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div> 
+                <a class="btn">See more</a>
+            </div>
+        </div>
+            <!------------------------ Contact Page --------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left reveal">
+                        <h1 id="contact-me">Contact Me</h1>
+                        <p><i class="fa-regular fa-envelope"></i> lunabachristianlee019@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 09565390155</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/qwersdfzxc" id="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://twitter.com/Christi90195179" id="twitter"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://instagram.com/lunabaleeris" id="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://linkedin.com/in/christianlee-lunaba-72229025b" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right reveal">
+                        <form>
+                            <input type="text" name="name" placeholder="You Name" required>
+                            <input type="text" name="e-mail" placeholder="Your E-Mail" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-regular fa-copyright"></i> Christian Lee Lunaba</p>
+            </div>
+        </div>
+        
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+
+</script>
+
+<script>
+    
+    function play_video(name){
+        var video = document.getElementById(name);
+        video.play();
+    }
+    function pause_video(name){
+        var video = document.getElementById(name);
+        video.pause();
+    }
+
+</script>
+<script>
+    var menu_bar = document.getElementById('menu_bar');
+    var menu_icon = document.getElementById('menu_icon');
+
+    function open_menu(){
+        menu_bar.style.right = "0";
+        menu_icon.style.opacity = "0";
+    }
+
+    function close_menu(){
+        menu_bar.style.right = "-150px";
+        menu_icon.style.opacity = ".7";
+    }
+
+</script>
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for (var i = 0; i < reveals.length; i++){
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if (revealtop < (windowheight - revealpoint)){
+                reveals[i].classList.add('active');
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+</script>
+
+</body>    
+</html> 
