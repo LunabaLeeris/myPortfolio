@@ -187,7 +187,8 @@
                         <a href="" download class="btn btn2">Download Resume</a>
                     </div>
                     <div class="contact-right reveal">
-                        <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
+                        <form name="contact" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
+                            <input class="d-none" name="bot-field">
                             <input type="text" name="name" placeholder="Your Name" name="name" required>
                             <input type="text" name="e-mail" placeholder="Your E-Mail" name="e-mail" required>
                             <textarea name="message" rows="6" placeholder="Your Message" name="message"></textarea>
