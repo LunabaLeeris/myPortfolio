@@ -264,11 +264,25 @@ body{
     grid-gap: 50px; 
     margin-top: 50px;
 }
+#Current{
+    height: 400px;
+}
+#QuizIt{
+    height: 400px;
+}
 .work{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    display: none;
 }
+
+.work:nth-child(1),
+.work:nth-child(2),
+.work:nth-child(3){
+    display: inline-block;
+}
+
 .work video{
     width: 100%;
     display: block;
