@@ -23,6 +23,7 @@ body{
     background-position: center;
 }
 .logo{
+    object-fit: contain;
     opacity:.3;
     transition: 0.5s;
 }
